@@ -110,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
                 ((RadioButton) findViewById(selectedEventID)).getText().toString()
                 : "No event selected";
         String results="";
-        if(catering.isChecked())results+=" Catering";
-        if(photography.isChecked())results+=" Photography";
-        if(liveMusic.isChecked())results+=" Live Music";
+        if(catering.isChecked())results+=" Catering,";
+        if(photography.isChecked())results+=" Photography,";
+        if(liveMusic.isChecked())results+=" Live Music,";
         if (results.isEmpty()) results = " No additional services";
         Toast.makeText(this, "Event: " + eventType + "\nServices:" + results, Toast.LENGTH_LONG).show();
     }
